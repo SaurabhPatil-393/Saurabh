@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Resume Form</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    form {
+      background: #ffffff;
+      max-width: 700px;
+      margin: auto;
+      padding: 30px 40px;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      font-weight: 600;
+      display: block;
+      margin-top: 15px;
+      color: #34495e;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    input[type="date"],
+    input[type="url"],
+    input[type="number"],
+    input[type="file"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      box-sizing: border-box;
+      font-size: 15px;
+    }
+
+    textarea {
+      resize: vertical;
+    }
+
+    input[type="file"] {
+      padding: 5px;
+    }
+
+    input[type="checkbox"] {
+      transform: scale(1.2);
+      margin-right: 8px;
+    }
+
+    input[type="submit"] {
+      margin-top: 25px;
+      width: 100%;
+      background: #2ecc71;
+      color: white;
+      font-size: 16px;
+      padding: 12px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    input[type="submit"]:hover {
+      background: #27ae60;
+    }
+
+    ::placeholder {
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <h2>Resume Submission Form</h2>
+  <form action="https://httpbin.org/post" method="post" enctype="multipart/form-data">
+    
+    <label>Field Name:</label>
+    <input type="text" name="field_name" required>
+
+    <label>Full Name:</label>
+    <input type="text" name="full_name" required>
+
+    <label>Email Address:</label>
+    <input type="email" name="email" required>
+
+    <label>Phone Number:</label>
+    <input type="tel" name="phone" required>
+
+    <label>Date of Birth:</label>
+    <input type="date" name="dob" required>
+
+    <label>Gender:</label>
+    <select name="gender" required>
+      <option value="">Select</option>
+      <option>Male</option>
+      <option>Female</option>
+      <option>Other</option>
+    </select>
+
+    <label>Marital Status:</label>
+    <select name="marital_status" required>
+      <option value="">Select</option>
+      <option>Single</option>
+      <option>Married</option>
+      <option>Divorced</option>
+    </select>
+
+    <label>Nationality:</label>
+    <input type="text" name="nationality" required>
+
+    <label>Address:</label>
+    <textarea name="address" rows="3" required></textarea>
+
+    <label>LinkedIn Profile URL:</label>
+    <input type="url" name="linkedin">
+
+    <label>GitHub Profile URL:</label>
+    <input type="url" name="github">
+
+    <label>Upload Profile Photo:</label>
+    <input type="file" name="photo" accept="image/*">
+
+    <label>Upload Resume (PDF only):</label>
+    <input type="file" name="resume" accept=".pdf" required>
+
+    <label>Career Objective:</label>
+    <textarea name="objective" rows="4" required></textarea>
+
+    <label>Highest Qualification:</label>
+    <input type="text" name="qualification" required>
+
+    <label>Name of College / University:</label>
+    <input type="text" name="college" required>
+
+    <label>Year of Graduation:</label>
+    <input type="number" name="graduation_year" min="1900" max="2099" required>
+
+    <label>Technical Skills (e.g., HTML, CSS, JS):</label>
+    <textarea name="technical_skills" rows="3"></textarea>
+
+    <label>Programming Languages Known:</label>
+    <textarea name="programming_languages" rows="3"></textarea>
+
+    <label>Certifications (if any):</label>
+    <textarea name="certifications" rows="3"></textarea>
+
+    <label>Work Experience (Years):</label>
+    <input type="number" name="experience" min="0">
+
+    <label>Last Company Worked At:</label>
+    <input type="text" name="last_company">
+
+    <label>Your Job Role / Designation:</label>
+    <input type="text" name="designation">
+
+    <label>Languages Known:</label>
+    <textarea name="languages_known" rows="2"></textarea>
+
+    <label>Hobbies:</label>
+    <textarea name="hobbies" rows="2"></textarea>
+
+    <label>
+      <input type="checkbox" name="declaration" required>
+      I hereby declare that all information provided is true and authentic.
+    </label>
+
+    <input type="submit" value="Submit Resume">
+  </form>
+</body>
+</html>
