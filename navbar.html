@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Microsoft Navbar</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f5f5f5;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: white;
+      padding: 12px 40px;
+      border-bottom: 1px solid #ccc;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .nav-left,
+    .nav-right {
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left img {
+      height: 22px;
+      margin-right: 35px;
+    }
+
+    .nav-left a,
+    .nav-right a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #333;
+      font-size: 14px;
+      transition: color 0.2s ease;
+      display: flex;
+      align-items: center;
+    }
+
+    .nav-left a:hover,
+    .nav-right a:hover {
+      color: #0078d4;
+    }
+
+    .nav-right a img {
+      margin-left: 6px;
+      height: 16px;
+      vertical-align: middle;
+    }
+
+    .nav-right a:last-child {
+      margin-right: 0;
+    }
+
+    .nav-right input[type="text"] {
+      padding: 6px 8px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-left">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg" alt="Microsoft Logo">
+      <a href="#">Microsoft 365</a>
+      <a href="#">Teams</a>
+      <a href="#">Copilot</a>
+      <a href="#">Windows</a>
+      <a href="#">Surface</a>
+      <a href="#">Xbox</a>
+      <a href="#">Support</a>
+    </div>
+
+    <div class="nav-right">
+      <a href="#">All Microsoft ▾</a>
+      <a href="#">Search
+        <img src="icon_search.png" alt="Search">
+      </a>
+      <a href="#">Cart
+        <img src="shopping-cart.svg" alt="Cart">
+      </a>
+      <a href="#">Sign in
+        <img src="login-icon-3.jpg" alt="Sign In">
+      </a>
+    </div>
+  </nav>
+
+</body>
+</html>
