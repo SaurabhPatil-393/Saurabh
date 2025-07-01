@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('https://wallpaperaccess.com/full/2871266.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 0;
+}
+
+.box {
+    width: 500px;
+    height: 400px;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 30px;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.box h1 {
+    color: #fff;
+    font-size: 24px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.input {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.input input {
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 40px;
+    font-size: 16px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+}
+
+.input input::placeholder {
+    color: #666;
+    font-size: 14px;
+}
+
+.operations {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.operations button {
+    flex: 1;
+    height: 40px;
+    font-size: 16px;
+    background: linear-gradient(to right, #1e1e1e, #3e3e3e);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.operations button:hover {
+    background: linear-gradient(to right, #3e3e3e, #1e1e1e);
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.result {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: #fff;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.2);
+}
